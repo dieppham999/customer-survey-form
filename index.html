@@ -5,6 +5,68 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <h2>Market Research Survey</h2>
+        <span>
+            Please take a few moments to complete this satisfaction survey.
+        </span>
+        <hr>
+    </header>
+    <main>
+        <form action="https://bold-tiger-59.webhook.cool" method="post">
+            <fieldset>
+                <legend>
+                    What is your age range?
+                </legend>
+                <select name="age-range" id="age-range">
+                    <option value="18-24" selected>18-24</option>
+                    <option value="25-34">25-34</option>
+                    <option value="35-50">35-50</option>
+                    <option value="50+">50+</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <legend>
+                    What is your yearly income range?
+                </legend>
+                <select name="income-range" id="income-range">
+                    <option value="$0 - $25,000">$0 - $25,000</option>
+                    <option value="$25,001 - $50,000">$25,001 - $50,000</option>
+                    <option value="$50,001 - $100,000">$50,001 - $100,000</option>
+                    <option value="$100,000+">$100,000+</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <legend>
+                    Gender Identity
+                </legend>
+                <input type="radio" name="male" id="male">
+                <label for="male">Male</label><br>
+                <input type="radio" name="female" id="female">
+                <label for="female">Female</label><br>
+                <input type="radio" name="nonbinary" id="nonbinary">
+                <label for="nonbinary">Nonbinary</label><br>
+                <input type="radio" name="other" id="other">
+                <label for="other">Nonbinary</label><br>
+                <input type="text"><br>
+                <span>Maximum of 250 characters. Currently Used: 0 characters.</span>
+            </fieldset>
+            
+            <fieldset>
+                <legend>
+                    Which of the following products have your purchased in the last 2 months.
+                    Please check all that apply.
+                </legend>
+                <input type="checkbox" name="prod1" id="prod1">
+                <label for="prod1">Product 1</label><br>
+                <input type="checkbox" name="prod2" id="prod2">
+                <label for="prod2">Product 2</label><br>
+                <input type="checkbox" name="prod3" id="prod3">
+                <label for="prod3">Product 3</label><br>
+            </fieldset>
+        </form>
+    </main>
 </body>
 </html>
